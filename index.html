@@ -10,32 +10,79 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Credit Card Checkout</title>
   </head>
   <body>
-    <section class="container">
-      <div class="checkout">
-        <span class="checkout__detail">Total</span>
-        <h3>$695</h3>
-        <span class="checkout__detail">Detail</span>
-        <span>Product 1</span>
-        <span>Product 2</span>
-        <button>PAY NOW</button>
-      </div>
-      <div class="payment">
-        <form action="" method="get">
-          <span>Name</span>
-          <input type="text" />
-          <span>Card Number</span>
-          <input type="text" />
-          <span>Expiration Date</span>
-          <input type="text" />
-          <span>CVV</span>
-          <input type="text" />
+    <main>
+      <section class="container">
+        <div class="container__box">
+          <div class="checkout">
+            <span class="checkout__detail">Total</span>
+            <h1>$695</h1>
+            <span class="checkout__detail">Detail</span>
+            <span class="checkout__product">Product 1</span>
+            <span class="checkout__price">$599</span>
+            <span class="checkout__product">Product 2</span>
+            <span class="checkout__price">$96</span>
+            <input type="submit" value="PAY NOW" class="checkout__button" />
+          </div>
+          <div class="payment">
+            <form action="index.html" autocomplete="off" method="get" class="payment__form">
+              <label for="name">Name</span>
+              <input type="text"
+              minlength="4"
+              class="input-field" 
+              autocomplete="off"
+              id="name" placeholder="Jane Doe"
+              required/>
 
-          <input type="submit" value="Submit the form" />
-        </form>
-      </div>
-    </section>
+              <label for="card-number">Card Number</span>
+              <input type="text"
+              maxlength="16"
+              class="input-field" 
+              autocomplete="off"
+              id="card-number" placeholder="1111-2222-3333-4444" required/>
+
+              <label for="exmonth">Expiration</span>
+              <input type="text"
+              maxlength="2"
+              class="input-field" 
+              autocomplete="off"
+              id="exmonth" placeholder="MM"
+              required/>
+            
+              <input type="text"
+              maxlength="4"
+              class="input-field" 
+              autocomplete="off"
+              id="exyear" placeholder="YYYY"
+              required/>
+
+              <label for="cvv">CVV</span>
+              <input type="text"
+              maxlength="4"
+              class="input-field"   
+              autocomplete="off"
+              id="cvv" placeholder="CVV"
+              required/>
+
+
+
+
+
+              <!-- <span>Card Number</span>
+              <input type="text" />
+              <span>Expiration Date</span>
+              <input type="text" />
+              <input type="text" />
+              <span>CVV</span>
+              <input type="text" /> -->
+    
+              
+            </form>
+          </div>
+        </d.container__box>
+      </section>
+    </main>
   </body>
 </html>
